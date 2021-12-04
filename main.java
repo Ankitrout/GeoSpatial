@@ -38,6 +38,6 @@ public class Main {
         b = scanned_value.nextDouble();
         System.out.println(findDistance(x, y, a, b) + "K.M");
         sc.close();
-    }
+    } 
 
 }
