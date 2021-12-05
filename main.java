@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class Geospatial {
     static double findDistance(double x, double y, double a, double b) {
         double L1 = x / 57.29577951; // converting the given values to radians
         double Y1 = y / 57.29577951;
@@ -19,25 +19,32 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // creating a Scanner object sc
         System.out.println("Enter the co-ordinates of the First location: ");
         System.out.println("Enter the Latitude: ");
         double x;
         Scanner scanned_value = new Scanner(System.in);
+		/* creating scanner object to store user input(latitude) of first location */
         x = scanned_value.nextDouble();
         System.out.println("Enter the Longitude: ");
         double y;
-        Scanner scanned_value2 = new Scanner(System.in);
+        Scanner scanned_value2 = new Scanner(System.in); 
+		/* creating scanner object to store user input(longitude) of first location*/
         y = scanned_value.nextDouble();
         System.out.println("Enter the co-ordinates of the Second location: ");
+		System.out.println("Enter the Latitude: ");
         double a;
         Scanner scanned_value3 = new Scanner(System.in);
+		/* creating scanner object to store user input(latitude) of first location */
         a = scanned_value.nextDouble();
+		 System.out.println("Enter the Longitude: ");
         double b;
         Scanner scanned_value4 = new Scanner(System.in);
+		/* creating scanner object to store user input(longitude) of first location*/
         b = scanned_value.nextDouble();
-        System.out.println(findDistance(x, y, a, b) + "K.M");
+        System.out.println(findDistance(x, y, a, b) + " "+"K.M");
         sc.close();
     } 
 
 }
+
